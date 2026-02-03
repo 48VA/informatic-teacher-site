@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Навчальний сайт з інформатики</title>
+  <style>
+    /* Загальні стилі */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9; /* світлий фон для всього сайту */
+      color: #333; /* чорний текст */
+      scroll-behavior: smooth;
+    }
+
+    /* Header */
+    header {
+      background-color: #004080; /* синій тільки для хедера */
+      color: white;
+      padding: 20px 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      display: inline-block;
+      vertical-align: middle;
+      color: white;
+    }
+
+    /* Логотип */
+    header img {
+      height: 50px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    /* Меню навігації */
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white; /* посилання білі */
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Основна частина сайту */
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      margin-bottom: 50px;
+      background-color: #fff; /* світлий фон для секцій */
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    section h2 {
+      color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+
+    ul.materials, ul.resources {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.materials li, ul.resources li {
+      background-color: #e6f0ff;
+      margin: 8px 0;
+      padding: 10px;
+      border-left: 5px solid #004080;
+      border-radius: 4px;
+    }
+
+    ul.resources li button {
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    ul.resources li button:hover {
+      background-color: #0066cc;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      nav a {
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Логотип поки можна додати пізніше -->
+  <img src="images/logo.png" alt="Логотип сайту">
+  <h1>Навчальний сайт з інформатики</h1>
+  <nav>
+    <a href="#home">Головна</a>
+    <a href="#about">Про автора</a>
+    <a href="#materials">Навчальні матеріали</a>
+    <a href="#resources">Корисні ресурси</a>
+    <a href="#contacts">Контакти</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="home">
+  <h2>Головна</h2>
+  <p>Ласкаво просимо на навчальний сайт з інформатики!</p>
+  <p>Мета цього ресурсу — забезпечити учнів гімназії зручним доступом до навчальних матеріалів, корисних ресурсів та практичних завдань з інформатики.</p>
+</section>
+
+<section id="about">
+  <h2>Про автора</h2>
+  <div style="display:flex; align-items:flex-start; gap:15px; flex-wrap:wrap;">
+    <img src="images/teacher.jpg" alt="Фотографія вчителя" style="width:200px; border-radius:8px; object-fit:cover;">
+    <p>
+      Автор сайту — студент спеціальності «Інформатика», який поєднує навчання з професійною діяльністю у сфері інформаційних технологій. 
+      Працює інформатиком, а також асистентом учителя в гімназії, де здійснює супровід дітей з інклюзивними освітніми потребами.
+    </p>
+  </div>
+  <p>
+    У своїй роботі приділяє увагу розвитку цифрової грамотності, логічного мислення та практичних навичок роботи з інформаційними технологіями. 
+    Сайт створено з метою систематизації навчальних матеріалів з інформатики та забезпечення зручного доступу до корисних освітніх ресурсів для учнів.
+  </p>
+</section>
+
+<section id="materials">
+  <h2>Навчальні матеріали</h2>
+  <ul class="materials">
+    <li>Основи програмування</li>
+    <li>Алгоритми та структури даних</li>
+    <li>Робота з комп’ютерними мережами</li>
+    <li>Офісні програми та цифрова грамотність</li>
+    <li>Безпека в інформаційному середовищі</li>
+  </ul>
+</section>
+
+<section id="resources">
+  <h2>Корисні ресурси</h2>
+  <ul class="resources">
+    <li>Онлайн-платформи для вивчення програмування <button onclick="window.open('https://www.code.org', '_blank')">Перейти</button></li>
+    <li>Навчальні відео та лекції <button onclick="window.open('https://www.youtube.com', '_blank')">Перейти</button></li>
+    <li>Корисні статті та підручники <button onclick="window.open('https://uk.wikipedia.org', '_blank')">Перейти</button></li>
+    <li>Інтерактивні вправи та тести <button onclick="window.open('https://www.khanacademy.org', '_blank')">Перейти</button></li>
+  </ul>
+</section>
+
+<section id="contacts">
+  <h2>Контакти</h2>
+  <p>Для зворотного зв’язку або запитань щодо навчальних матеріалів ви можете звертатися:</p>
+  <p><strong>Електронна пошта:</strong> example@mail.com<br>
+     <strong>Телефон:</strong> +380 ХХХ ХХХ ХХ ХХ</p>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Навчальний сайт з інформатики. Всі права захищені.
+</footer>
+
+</body>
+</html>
