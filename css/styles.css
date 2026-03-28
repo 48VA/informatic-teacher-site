@@ -1,0 +1,352 @@
+/* Скидання відступів і шрифтів */
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px; /* базовий розмір */
+  font-family: Arial, sans-serif;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+/* Загальні стилі */
+body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+}
+
+/* Логотип */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  fill: #FFD700; /* золотистий колір монітора */
+  margin-right: 10px;
+  transition: fill 0.3s ease;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.logo:hover .logo-icon {
+  fill: #FF4500; /* змінює колір при наведенні */
+}
+
+.logo:hover .logo-text {
+  color: #FFD700;
+}
+
+header img {
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Меню навігації */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}header {
+  background-color: #004080;
+  color: white;
+  padding: 20px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;   /* елементи йдуть зверху вниз */
+  align-items: center;      /* центрує по горизонталі */
+}
+
+.header-brand {
+  display: flex;
+  flex-direction: column;   /* логотип + h1 один під одним */
+  align-items: center;      /* центрує їх */
+  margin-bottom: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  fill: #FFD700;
+  margin-right: 10px;
+  transition: fill 0.3s ease;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.logo:hover .logo-icon {
+  fill: #FF4500;
+}
+
+.logo:hover .logo-text {
+  color: #FFD700;
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Основна частина сайту */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+section {
+  margin-bottom: 50px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+section h2 {
+  color: #004080;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+}
+
+
+#achievements {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+
+}
+
+#achievements h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.achievement-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.achievement-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.achievement-card img {
+  width: 100%;        /* зображення займає всю ширину картки */
+  height: auto;       /* висота автоматично підлаштовується */
+  object-fit: contain;/* зберігає пропорції, нічого не обрізає */
+}
+
+
+
+.achievement-info {
+  padding: 15px;
+}
+
+.achievement-info h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  color: #0073e6;
+}
+
+.achievement-info p {
+  margin: 0 0 5px 0;
+  color: #555;
+}
+
+.achievement-info small {
+  color: #999;
+}
+
+ul.materials, ul.resources {
+  list-style: none;
+  padding: 0;
+}
+
+ul.materials li, ul.resources li {
+  background-color: #e6f0ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-left: 5px solid #004080;
+  border-radius: 4px;
+}
+
+ul.resources li button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+ul.resources li button:hover {
+  background-color: #0066cc;
+}
+
+/* Контакти */
+.contacts {
+  display: flex;
+  flex-direction: column;   /* розташування зверху вниз */
+  align-items: left;      /* центрує по горизонталі */
+  gap: 10px;                /* відступи між елементами */
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contacts h2 {
+  color: #004080;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  text-align: center;       /* заголовок по центру */
+}
+
+.contacts p {
+  margin-bottom: 15px;
+  color: #555;
+  text-align: center;       /* текст по центру */
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts li {
+  background-color: #e6f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* іконка + текст по центру */
+  margin-bottom: 12px;
+  font-size: 1em;
+}
+
+.contacts a {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* іконка + текст по центру */
+  color: #004080;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+.contacts .icon {
+  width: 24px;
+  height: 24px;
+  fill: #004080;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
