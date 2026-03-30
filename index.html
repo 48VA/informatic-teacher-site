@@ -26,41 +26,49 @@
   </nav>
 </header>
 <main>
+
 <section id="home">
   <h2>Головна</h2>
   <p>Ласкаво просимо на навчальний сайт з інформатики!</p>
   <p>Мета цього ресурсу — забезпечити учнів гімназії зручним доступом до навчальних матеріалів, корисних ресурсів та практичних завдань з інформатики.</p>
 </section>
+
 <section id="about">
   <h2>Про автора</h2>
-  <div style="display:flex; align-items:flex-start; gap:15px; flex-wrap:wrap;">
-    <img src="images/teacher.jpg" alt="Фотографія вчителя" style="width:200px; border-radius:8px; object-fit:cover;">
-    <p>
-      Автор сайту — студент спеціальності «Інформатика», який поєднує навчання з професійною діяльністю у сфері інформаційних технологій. 
-      Працює інформатиком, а також асистентом учителя в гімназії, де здійснює супровід дітей з інклюзивними освітніми потребами.
-    </p>
+  <div class="author-container">
+    <img src="images/teacher.jpg" alt="Фотографія вчителя" class="author-photo">
+    <div class="author-text">
+      <p>
+        Автор сайту — студент спеціальності «Інформатика», який поєднує навчання з професійною діяльністю у сфері
+        інформаційних технологій.
+        Працює інформатиком, а також асистентом учителя в гімназії, де здійснює супровід дітей з інклюзивними освітніми
+        потребами.
+      </p>
+      <p>
+        У своїй роботі приділяє увагу розвитку цифрової грамотності, логічного мислення та практичних навичок роботи з
+        інформаційними технологіями.
+        Сайт створено з метою систематизації навчальних матеріалів.
+      </p>
+    </div>
   </div>
-  <p>
-    У своїй роботі приділяє увагу розвитку цифрової грамотності, логічного мислення та практичних навичок роботи з інформаційними технологіями. 
-    Сайт створено з метою систематизації навчальних матеріалів з інформатики та забезпечення зручного доступу до корисних освітніх ресурсів для учнів.
-  </p>
 </section>
 
 <section id="achievements">
   <h2>Досягнення вчителя</h2>
   <div class="achievement-grid">
-    <div class="achievement-card">
-      <a href="https://vseosvita.ua/user/id1693679" target="_blank"><img src="https://cert.vseosvita.ua/TJ980655EQ-5cca-219x0.jpg"></a>
-      <img src="cert_it_support.jpg" alt="Курси підвищення кваліфікації">
-      <div class="achievement-info">
-        <h4>GoGlobal NGO</h4>
-        <p>VSEOSVITA, 2026</p>
-        <small>Сучасний вчитель: як захопити увагу учнів дизайном та цікавою подачею навчальних матеріалів</small>
-      </div>
-    </div>
-    <!-- Cертифікати -->
+ <div class="achievement-card">
+  <a href="images/cert-vseosvita.jpg" target="_blank">
+    <img src="images/cert-vseosvita.jpg" alt="Сертифікат: Сучасний вчитель">
+  </a>
+  <div class="achievement-info">
+    <h4>GoGlobal NGO</h4>
+    <p>VSEOSVITA, 2026</p>
+    <small>Сучасний вчитель: як захопити увагу учнів дизайном та цікавою подачею навчальних матеріалів</small>
+  </div>
+</div>
   </div>
 </section>
+
 <section id="materials">
   <h2>Навчальні матеріали</h2>
   <ul class="materials">
@@ -115,11 +123,10 @@
   <h2>Корисні ресурси</h2>
   <ul class="resources">
     <li>Онлайн-платформи для вивчення програмування
-      <button onclick="window.open('')"></button>
-      <button onclick="window.open('https://www.codecademy.com', '_blank')">CodeAcademy</button>
-      <button onclick="window.open('https://www.sololearn.com', '_blank')">SoloLearn</button>
-      <button onclick="window.open('https://share.google/utXTmMYwggdVLAUG0', '_blank')">Scratch</button>
-      <button onclick="window.open('https://www.programiz.com/python-programming/online-compiler/', '_blank')">Online Python Compiler</button>
+      <a href="https://www.codecademy.com" target="_blank" class="button-link">CodeAcademy</a>
+      <a href="https://www.sololearn.com" target="_blank" class="button-link">SoloLearn</a>
+      <a href="https://share.google.com/utXTmMYwggdVLAUG0" target="_blank" class="button-link">Scratch</a>
+      <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" class="button-link">Online Python Compiler</a>
     </li>
     <li>Навчальні відео та лекції
       <button onclick="window.open('https://youtu.be/LYgxSAZetVM', '_blank')">Арифметичні обчислення 6 клас</button>
@@ -127,15 +134,14 @@
       <button onclick="window.open('https://www.ted.com/topics/education', '_blank')">TED-Ed</button>
     </li>
     <li>Корисні статті та підручники
-    <button onclick="window.open('https://share.google/lhf11NYe9qjw9k2gd', '_blank')">Підручник Інформатика 5 клас Коршунова 2022 рік</button>
-    <button onclick="window.open('https://pidruchnyk.com.ua/2686-informatyka-6-klas-ryvkind-2023.html', '_blank')">Підручник Інформатика 6 клас Ривкинд 2023 рік</button>
-    <button onclick="window.open('https://pidruchnyk.com.ua/2809-informatyka-ryvkind-7-klas-2024.html', '_blank')">Підручник Інформатика 7 клас Ривкінд 2024 НУШ</button>
-    <button onclick="window.open('https://pidruchnyk.com.ua/3011-informatyka-ryvkind-8-klas-2025.html', '_blank')">Підручник Інформатика 8 клас Ривкінд 2025 НУШ</button>
+      <a href="https://share.google.com/lhf11NYe9qjw9k2gd" target="_blank" class="button-link">Підручник Інформатика 5 клас Коршунова 2022 рік</a>
+      <a href="https://pidruchnyk.com.ua/2686-informatyka-6-klas-ryvkind-2023.html" target="_blank" class="button-link">Підручник Інформатика 6 клас Ривкинд 2023 рік</a>
+      <a href="https://pidruchnyk.com.ua/2809-informatyka-ryvkind-7-klas-2024.html" target="_blank" class="button-link">Підручник Інформатика 7 клас Ривкінд 2024 НУШ</a>
+      <a href="https://pidruchnyk.com.ua/3011-informatyka-ryvkind-8-klas-2025.html" target="_blank" class="button-link">Підручник Інформатика 8 клас Ривкінд 2025 НУШ</a>
     </li>
     <li>Інтерактивні вправи та тести
       <button onclick="window.open('https://share.google/pyxRcEGo9Ww9xR8mj', '_blank')">На Урок</button>
-      <button onclick="window.open('https://share.google/UwRg3SIVq0xbCjcBQ', '_blank')">VSEOSVITA</button></li>
-      </ul>
+      <button onclick="window.open('https://share.google/UwRg3SIVq0xbCjcBQ', '_blank')">VSEOSVITA</button>
     </li>
   </ul>
 </section>
@@ -168,8 +174,6 @@
 </section>
 <footer>
   © 2026 Навчальний сайт з інформатики. Всі права захищені.
-  
 </footer>
-
 </body>
 </html>
